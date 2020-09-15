@@ -120,11 +120,14 @@ public class Actividad2 extends AppCompatActivity {
                 Intent intent=new Intent(Actividad2.this, Actividad3.class);
                 startActivity(intent);
 
+            }
+        });
 
-
-
-
-
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentR=new Intent(Actividad2.this, MainActivity.class);
+                startActivity(intentR);
 
             }
         });
