@@ -118,6 +118,7 @@ public class Actividad2 extends AppCompatActivity {
                 txtSelecion1.setText("                        ");
                 txtSelecion1.setVisibility(View.INVISIBLE);
                 Intent intent=new Intent(Actividad2.this, Actividad3.class);
+                intent.putExtra("PAIS",seleccionP );
                 startActivity(intent);
 
             }

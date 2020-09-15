@@ -12,7 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="204dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="3dp"
         app:srcCompat="@mipmap/logo" />
 
@@ -64,6 +64,7 @@
 
     <Button
         android:id="@+id/btnAvanza"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CONTINUAR" />
