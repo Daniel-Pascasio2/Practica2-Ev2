@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -73,6 +74,19 @@ public class Actividad3 extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter=new Adapter(this, items, descripciones, ArrImg);
         recyclerView.setAdapter(adapter);
+
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // Toast.makeText(getApplicationContext(),"Seleccion: "+items.get(recyclerView.getChildAdapterPosition(view)),Toast.LENGTH_SHORT).show();
+                if(items.get(recyclerView.getChildAdapterPosition(view))=="Moneda: "){
+                   // Toast.makeText(getApplicationContext(),"No somos malos ni buenos...",Toast.LENGTH_SHORT).show();
+                    Intent intentO=new Intent(Actividad3.this, Actividad4.class);
+                    intentO.putExtra("PAIS",pais);
+                    startActivity(intentO);
+                }
+            }
+        });
 
 
 
