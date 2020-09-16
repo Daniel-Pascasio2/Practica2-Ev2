@@ -33,24 +33,15 @@
     </RelativeLayout>
 
 
-
     <LinearLayout
         android:id="@+id/linearNuevo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="#fff"
-        >
-
-        <Button
-            android:id="@+id/btnContinuar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Continuar" />
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnRegresar"
@@ -59,8 +50,14 @@
             android:layout_weight="1"
             android:text="Regresar" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Continuar" />
 
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

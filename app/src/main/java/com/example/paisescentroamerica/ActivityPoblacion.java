@@ -2,6 +2,7 @@ package com.example.paisescentroamerica;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.icu.lang.UCharacter;
 import android.os.Bundle;
@@ -26,7 +27,7 @@ import java.util.ArrayList;
 
 public class ActivityPoblacion extends AppCompatActivity {
     private PieChart pieChart;
-    private Button btnMostrar;
+    private Button btnMostrar, btnRegresar;
     String pais;
     private EditText etCant;
     private TextView txtP;
@@ -41,6 +42,7 @@ public class ActivityPoblacion extends AppCompatActivity {
         setContentView(R.layout.activity_poblacion);
         pieChart = findViewById(R.id.graphPie);
         btnMostrar = findViewById(R.id.btnMostrar);
+        btnRegresar = findViewById(R.id.btnRegresar);
         txtP=findViewById(R.id.txPaisde);
         pais=getIntent().getStringExtra("PAIS");
         txtP.setText("Poblacion de: "+pais);
@@ -80,6 +82,16 @@ public class ActivityPoblacion extends AppCompatActivity {
                 }
 
                 createCharts();
+            }
+        });
+
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentR=new Intent(ActivityPoblacion.this, Actividad3.class);
+                intentR.putExtra("PAIS",pais);
+                startActivity(intentR);
+
             }
         });
 

@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Mostrar" />
+            android:text="CALCULAR" />
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/graphPie"
@@ -69,6 +69,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="0" />
 
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="REGRESAR" />
 
 
 </LinearLayout>
