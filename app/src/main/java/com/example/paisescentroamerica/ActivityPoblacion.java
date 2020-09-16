@@ -27,8 +27,9 @@ import java.util.ArrayList;
 public class ActivityPoblacion extends AppCompatActivity {
     private PieChart pieChart;
     private Button btnMostrar;
+    String pais;
     private EditText etCant;
-    private TextView n1,n2,n3;
+    private TextView txtP;
     String[] persons = new String[]{"Hombres","Mujeres","Niños"};
     ArrayList<Float> personsC = new ArrayList<>();
     int[] color = new int[]{Color.GREEN,Color.BLUE,Color.RED};
@@ -40,9 +41,9 @@ public class ActivityPoblacion extends AppCompatActivity {
         setContentView(R.layout.activity_poblacion);
         pieChart = findViewById(R.id.graphPie);
         btnMostrar = findViewById(R.id.btnMostrar);
-        n1 = findViewById(R.id.n1);
-        n2 = findViewById(R.id.n2);
-        n3 = findViewById(R.id.n3);
+        txtP=findViewById(R.id.txPaisde);
+        pais=getIntent().getStringExtra("PAIS");
+        txtP.setText("Poblacion de: "+pais);
         etCant = findViewById(R.id.etNum);
 
         btnMostrar.setOnClickListener(new View.OnClickListener() {
@@ -118,11 +119,12 @@ public class ActivityPoblacion extends AppCompatActivity {
     }
     public void createCharts(){
 
-        pieChart= (PieChart)getSameChart(pieChart,"Poblacion",Color.GRAY,Color.WHITE,900);
+        pieChart= (PieChart)getSameChart(pieChart,"Poblacion "+pais,Color.GRAY,Color.WHITE,900);
         pieChart.setHoleRadius(10);
         pieChart.setTransparentCircleRadius(12);
         pieChart.setData(getPieData());
         pieChart.invalidate();
+
 
     }
     private DataSet getData(DataSet dataSet)
