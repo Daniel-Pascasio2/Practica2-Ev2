@@ -121,18 +121,21 @@ public class Actividad3 extends AppCompatActivity {
         items=new ArrayList<>();
         items.add("El Salvador");
         items.add("Moneda: ");
+        items.add("Escudo Nacional:");
         items.add("Ave Nacional:");
         items.add("Arbol Nacional: ");
 
         descripciones=new ArrayList<>();
-        descripciones.add("15/09/2020");
+        descripciones.add("15/09/1821");
         descripciones.add("Dolar");
+        descripciones.add("");
         descripciones.add("Torogoz");
         descripciones.add("Maquilizgua");
 
         ArrImg=new ArrayList<>();
         ArrImg.add(R.drawable.elsalvador);
         ArrImg.add(R.drawable.monedaesa);
+        ArrImg.add(R.drawable.escudo_elsalvador);
         ArrImg.add(R.drawable.torogozesa);
         ArrImg.add(R.drawable.maquilishuatesa);
 
