@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="12dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -21,10 +25,10 @@
         android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calderon Guadron, Douglas Andres 25-2865-2016"
-        android:gravity="center"
-        android:textSize="14dp"
         android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="Calderon Guadron, Douglas Andres 25-2865-2016"
+        android:textSize="14dp"
         android:textStyle="bold" />
 
     <TextView
@@ -32,10 +36,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="  Cerón Arias, Johanna Isabel 25-1656-2016"
-        android:gravity="center"
-        android:textSize="14dp"
         android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="  Cerón Arias, Johanna Isabel 25-1656-2016"
+        android:textSize="14dp"
         android:textStyle="bold" />
 
     <TextView
@@ -43,10 +47,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="  Pascasio Calderon, José Daniel 25-1670-2016"
-        android:gravity="center"
-        android:textSize="14dp"
         android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="  Pascasio Calderon, José Daniel 25-1670-2016"
+        android:textSize="14dp"
         android:textStyle="bold" />
 
     <TextView
@@ -54,22 +58,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="  Vásquez Chávez, Kevin Alexander 25-2281-2014"
-        android:gravity="center"
-        android:textSize="14dp"
         android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="  Vásquez Chávez, Kevin Alexander 25-2281-2014"
+        android:textSize="14dp"
         android:textStyle="bold" />
-
 
 
     <Button
         android:id="@+id/btnAvanza"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="CONTINUAR" />
-
-
 
 
 </LinearLayout>
