@@ -2,6 +2,7 @@ package com.example.paisescentroamerica;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,12 +13,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>
+ implements View.OnClickListener {
 
     private LayoutInflater layoutInflater;
     private List<String> data;
     private List<String> data2;
     private List<Integer> data3;
+
+    private View.OnClickListener listener;
 
     public Adapter(Context context, List<String> data, List<String> data2, List<Integer> data3){
      this.layoutInflater=LayoutInflater.from(context);
@@ -32,6 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
 
         View view=layoutInflater.inflate(R.layout.custom_view, viewGroup, false);
+        view.setOnClickListener(this);
         return new ViewHolder(view);
     }
 
@@ -48,6 +53,19 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public int getItemCount() {
         return data.size();
+    }
+
+    public void setOnClickListener(View.OnClickListener listener){
+        this.listener=listener;
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (listener!=null){
+            listener.onClick(view);
+        }
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
