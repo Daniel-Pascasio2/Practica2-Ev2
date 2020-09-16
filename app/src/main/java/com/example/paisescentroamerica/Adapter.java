@@ -77,8 +77,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>
             txtdescripcion=itemView.findViewById(R.id.txtdescription);
             imagenes=itemView.findViewById(R.id.imageView);
 
-
-
         }
     }
 }
