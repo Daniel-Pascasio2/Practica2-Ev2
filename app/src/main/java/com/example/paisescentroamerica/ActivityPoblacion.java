@@ -119,7 +119,7 @@ public class ActivityPoblacion extends AppCompatActivity {
     }
     public void createCharts(){
 
-        pieChart= (PieChart)getSameChart(pieChart,"Poblacion",Color.GRAY,Color.WHITE,900);
+        pieChart= (PieChart)getSameChart(pieChart,"Poblacion "+pais,Color.GRAY,Color.WHITE,900);
         pieChart.setHoleRadius(10);
         pieChart.setTransparentCircleRadius(12);
         pieChart.setData(getPieData());

@@ -46,7 +46,7 @@
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/graphPie"
             android:layout_width="match_parent"
-            android:layout_height="239dp"
+            android:layout_height="307dp"
             android:layout_weight="0">
 
         </com.github.mikephil.charting.charts.PieChart>
