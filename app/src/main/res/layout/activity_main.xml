@@ -28,6 +28,7 @@
         android:layout_marginBottom="3dp"
         android:gravity="center"
         android:text="Calderon Guadron, Douglas Andres 25-2865-2016"
+        android:textColor="#000"
         android:textSize="14dp"
         android:textStyle="bold" />
 
@@ -39,6 +40,7 @@
         android:layout_marginBottom="3dp"
         android:gravity="center"
         android:text="  Cerón Arias, Johanna Isabel 25-1656-2016"
+        android:textColor="#000"
         android:textSize="14dp"
         android:textStyle="bold" />
 
@@ -50,6 +52,7 @@
         android:layout_marginBottom="3dp"
         android:gravity="center"
         android:text="  Pascasio Calderon, José Daniel 25-1670-2016"
+        android:textColor="#000"
         android:textSize="14dp"
         android:textStyle="bold" />
 
@@ -61,6 +64,7 @@
         android:layout_marginBottom="3dp"
         android:gravity="center"
         android:text="  Vásquez Chávez, Kevin Alexander 25-2281-2014"
+        android:textColor="#000"
         android:textSize="14dp"
         android:textStyle="bold" />
 
