@@ -108,6 +108,7 @@ public class Actividad3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentR=new Intent(Actividad3.this, Actividad2.class);
+                intentR.putExtra("PAIS",pais);
                 startActivity(intentR);
 
             }
