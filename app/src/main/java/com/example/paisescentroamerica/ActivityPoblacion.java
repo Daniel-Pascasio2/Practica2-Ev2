@@ -45,7 +45,7 @@ public class ActivityPoblacion extends AppCompatActivity {
         btnRegresar = findViewById(R.id.btnRegresar);
         txtP=findViewById(R.id.txPaisde);
         pais=getIntent().getStringExtra("PAIS");
-        txtP.setText("Poblacion de: "+pais);
+        txtP.setText("Poblacion de "+pais);
         etCant = findViewById(R.id.etNum);
 
         btnMostrar.setOnClickListener(new View.OnClickListener() {

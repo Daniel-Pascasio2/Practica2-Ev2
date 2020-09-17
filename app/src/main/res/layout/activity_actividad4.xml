@@ -9,6 +9,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="15dp"
+    android:background="#fff"
     tools:context=".Actividad4">
 
     <TextView
@@ -34,6 +35,8 @@
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/disenio_boton"
+        android:textColor="#fff"
         android:text="Regresar" />
 
 </LinearLayout>

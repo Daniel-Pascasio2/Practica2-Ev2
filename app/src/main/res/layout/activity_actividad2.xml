@@ -9,6 +9,7 @@
     android:layout_marginRight="12sp"
     android:layout_marginBottom="12sp"
     android:orientation="vertical"
+    android:background="#fff"
     tools:context=".Actividad2">
 
     <TextView
@@ -19,6 +20,7 @@
         android:gravity="center"
         android:text="Paises de Centro America:"
         android:textSize="18dp"
+        android:textColor="#000"
         android:textStyle="bold" />
 
     <ListView
@@ -30,10 +32,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="Seleccione un Continente: "
         android:textSize="15dp"
+        android:textColor="#000"
         android:textStyle="bold" />
 
     <TextView
@@ -41,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
+        android:textColor="#000"
         android:textStyle="bold" />
 
     <TextView
@@ -55,6 +59,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginBottom="12sp"
 
         >
 
@@ -63,6 +71,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/disenio_boton"
+            android:textColor="#fff"
             android:text="Regresar" />
 
         <Button
@@ -70,6 +80,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/disenio_boton"
+            android:textColor="#fff"
             android:text="Continuar" />
 
     </LinearLayout>
