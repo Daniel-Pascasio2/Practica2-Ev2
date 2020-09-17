@@ -150,7 +150,7 @@ public class Actividad3 extends AppCompatActivity {
 
         descripciones=new ArrayList<>();
         descripciones.add("15/09/1821");
-        descripciones.add("Colon Costarricence");
+        descripciones.add("Colon Costarica");
         descripciones.add("");
         descripciones.add("Yiguirro");
         descripciones.add("Guanacaste");
